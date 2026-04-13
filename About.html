@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f14;
+      color: white;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: black;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .logo span {
+      color: #22d3ee;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #22d3ee;
+      font-size: 14px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80vh;
+      padding: 50px;
+    }
+
+    .text {
+        max-width: 600px;
+    }
+
+    .text h1 {
+      font-size: 60px;
+      color: #00bfff;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .text p {
+      font-size: 22px;
+      color: #00bfff;
+    }
+
+    .circles {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, #22d3ee, #0ea5e9, #020617);
+    }
+
+    .circle1 {
+      width: 300px;
+      height: 300px;
+      right: 0;
+      top: 50px;
+    }
+
+    .circle2 {
+      width: 250px;
+      height: 250px;
+      right: 80px;
+      top: 150px;
+    }
+
+.circles {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #22d3ee, #0ea5e9, #020617);
+  opacity: 0;
+      box-shadow: 
+            0 0 60px rgba(191, 0, 255, 0.719),
+            0 0 120px rgba(255, 0, 247, 0.324);
+}
+
+
+.circle1 {
+  width: 300px;
+  height: 300px;
+  right: 0;
+  top: 50px;
+
+  animation: flyIn1 1.5s ease-out forwards;
+}
+
+
+.circle2 {
+  width: 250px;
+  height: 250px;
+  right: 80px;
+  top: 150px;
+
+  animation: flyIn2 1.8s ease-out forwards;
+}
+
+
+@keyframes flyIn1 {
+  0% {
+    transform: translateX(400px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flyIn2 {
+  0% {
+    transform: translateY(400px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+  </style>
+
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="logo"><span>◆</span> Shrayash.dev</div>
+
+    <div class="nav-links">
+      <a href="Main.html">Home</a>
+      <a href="#">About</a>
+      <a href="Interests.html">Interest</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </nav>
+
+
+  <section class="about">
+
+    <div class="text">
+      <h1>About me</h1>
+      <p>I am Shrayash Karmacharya, a student at Kavya College studying science as my major
+         and computer as my sub-major. I am passionate about technology and always eager to 
+         learn new skills. I enjoy solving problems and exploring how things work, especially 
+         in the world of computers. I’m constantly learning and improving, aiming to build impactful
+         projects in the future. </p>
+    </div>
+
+    <div class="circles">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+    </div>
+
+  </section>
+
+</body>
+</html>

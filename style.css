@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #000
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #a5f3fc;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #22d3ee;
+}
+
+.main {
+  height: 50vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.main-text h2 {
+  font-size: 48px;
+  color: #67e8f9;
+}
+
+.main-text p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.subtext {
+  opacity: 0.7;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #06b6d4;
+  color: black;
+}
+
+.primary:hover {
+  background: #22d3ee;
+}
+
+.secondary {
+  border: 1px solid #06b6d4;
+  color: #06b6d4;
+}
+
+.secondary:hover {
+  background: #06b6d4;
+  color: black;
+}
+
+/* Hero Image */
+.hero-image img {
+  border-radius: 10px;
+  width: 350px;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(34, 211, 238, 0.1);
+}
+
+.main {
+    display: -moz-inline-box;
+    flex-direction: column;   /* stack items vertically */
+    align-items: center;      /* center everything */
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.main-image img {
+    width: 300px;
+    height: 200px;
+
+    box-shadow: 0 0 40px rgba(0, 200, 255, 0.5);
+
+    animation: float 3s ease-in-out infinite;
+}
+
+/* floating effect */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
